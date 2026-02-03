@@ -1159,6 +1159,7 @@ body{
   
   /* Step number */
   .step-number {
+    
     font-size: 32px;
     font-weight: 700;
     opacity: 0.3;
@@ -1180,6 +1181,7 @@ body{
   
   /* Description */
   .process-card p {
+    color: white;
     font-size: 15px;
     line-height: 1.6;
     opacity: 0.85;
@@ -1218,6 +1220,79 @@ body{
   }
   
   /* 💻 Laptop & Desktop */
+  @media (min-width: 992px) {
+    .process-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+
+
+
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+  
+  /* Card */
+  .process-card {
+    position: relative; /* REQUIRED */
+    background: #0f0f0f;
+    padding: 40px 25px 60px;
+    border-radius: 14px;
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  /* Icon */
+  .process-card i {
+    font-size: 38px;
+    color: orange;
+    margin-bottom: 18px;
+  }
+  
+  /* Title */
+  .process-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  /* Description */
+  .process-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+  
+  /* 🔥 STEP NUMBER FIX */
+  .process-card .step {
+    position: absolute;
+    bottom: 18px;
+    right: 22px;
+    font-size: 42px;
+    font-weight: 800;
+    opacity: 0.15;
+    pointer-events: none;
+  }
+  
+  /* 📱 Mobile */
+  @media (max-width: 576px) {
+    .process-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* 📱 Tablet */
+  @media (min-width: 577px) and (max-width: 991px) {
+    .process-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* 💻 Desktop */
   @media (min-width: 992px) {
     .process-grid {
       grid-template-columns: repeat(4, 1fr);
