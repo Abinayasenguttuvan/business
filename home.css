@@ -1139,3 +1139,88 @@ body{
   }
   
   
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+  
+  /* Card */
+  .process-card {
+    background: #111;
+    padding: 30px 25px;
+    border-color: orange;
+    border-radius: 14px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Step number */
+  .step-number {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0.3;
+  }
+  
+  /* Line */
+  .line {
+    width: 50px;
+    height: 2px;
+    background: orange;
+    margin: 12px 0 20px;
+  }
+  
+  /* Title */
+  .process-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  /* Description */
+  .process-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+  
+  /* 🔥 Button FIX */
+  .process-card a {
+    margin-top: auto; /* pushes button to bottom */
+    display: inline-block;
+    align-self: flex-start;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: orange;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .process-card a:hover {
+    background: orange;
+  }
+  
+  /* 📱 Mobile */
+  @media (max-width: 576px) {
+    .process-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* 📱 Tablet */
+  @media (min-width: 577px) and (max-width: 991px) {
+    .process-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* 💻 Laptop & Desktop */
+  @media (min-width: 992px) {
+    .process-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
